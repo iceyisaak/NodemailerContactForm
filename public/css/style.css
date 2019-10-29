@@ -1,0 +1,215 @@
+/* BASE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    max-width: 100vw;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 62.5%
+}
+
+/* Variables */
+
+:root {
+    --color-grey-light-1: #f7f7f7;
+    --color-grey-light-2: #dad9d9;
+    --color-grey-light-3: #b3b3b3;
+    --color-grey-dark-1: #7a7a7a;
+    --color-grey-dark-2: #444444;
+    --color-grey-dark-3: #272727;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-primary: red;
+    --color-secondary: green;
+    --color-tertiary: blue;
+    --default-font-size: 1.6rem;
+}
+
+/* Typography */
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    font-size: var(--default-font-size);
+    color: var(--color-grey-dark-2);
+}
+
+.heading__primary {
+    font-size: 3rem;
+}
+
+.heading__primary--main {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.heading__primary--sub {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 3.5rem;
+    text-align: center;
+}
+
+.paragraph {
+    font-size: 1.6rem;
+    color: var(--color-white);
+}
+
+/* Utilities */
+
+.u-margin-bottom-3 {
+    margin-bottom: 3rem;
+}
+
+/* Layout */
+
+.section__contact {
+    padding: 5rem 0 6rem;
+    min-height: 100vh;
+}
+
+/* Component/Button */
+
+.btn {
+    color: #000;
+    text-decoration: none;
+    background: var(--color-grey-dark-2);
+    color: var(--color-grey-light-1);
+    outline: none;
+    font-size: var(--default-font-size);
+}
+
+.btn__form-btn {
+    border: none;
+    padding: .5rem 1rem;
+}
+
+/* Component/Header */
+
+.header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.5)),url('../img/header_bg-img.jpg')bottom/cover no-repeat;
+    padding: 8rem 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__article {
+    width: 80%;
+}
+
+/* Component/Main */
+
+.main {}
+
+/* Component/Main */
+
+.contact__form {
+    /* height: 100vh; */
+}
+
+/* Component/Form */
+
+.form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.form__wrapper {
+    width: 80%;
+}
+
+.sender__name,
+.sender__family-name,
+.sender__company,
+.sender__email,
+.sender__phone-number,
+.message__email,
+.message__subject,
+.message__text {
+    display: flex;
+    flex-flow: column;
+    font-size: var(--default-font-size);
+    flex: 0 0 calc(50% - 1rem);
+    margin-right: 1rem;
+}
+
+.form__sender-info{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.form__message-info{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.form__label{
+    font-size: 1.2rem;
+}
+
+.form__input {
+    padding: .25rem .5rem;
+    outline: none;
+    border: none;
+    background: #f5f5f5;
+    /* flex: 0 0 20rem; */
+}
+
+.form__textarea {
+    padding: .25rem;
+    resize: none;
+    outline: none;
+    border: none;
+    background: none;
+    background: #f5f5f5;
+}
+
+.required-fields{
+    font-size: .5rem;
+}
+
+.form__btn {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0 0;
+}
+
+/* Component/Footer */
+
+.footer {
+    font-size: 1.5rem;
+    color: #EECEBF;
+    background: #1B6168;
+    padding: 2rem 0 0;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.item__text{
+    font-size: 1rem;
+}
+
+.footer .footer__copyright {
+    font-size: 1rem;
+}
